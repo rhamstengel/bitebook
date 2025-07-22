@@ -1,0 +1,78 @@
+/* Main stylesheet for Bitebook */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+form#recipe-form {
+  background: #fff;
+  max-width: 400px;
+  margin: 30px auto 20px auto;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  resize: vertical;
+  background: #fafafa;
+  color: #222;
+}
+
+form button[type="submit"] {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+  background: #388e3c;
+}
+
+#recipe-list {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 18px 22px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

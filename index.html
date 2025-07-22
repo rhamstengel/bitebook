@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>BiteBook</h1>
+  <form id="recipe-form">
+    <label for="title">Recipe Title</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+    <label for="category">Category</label><br>
+    <select id="category" name="category" required>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Snack">Snack</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+    <label for="ingredients">Ingredients</label><br>
+    <textarea id="ingredients" name="ingredients" rows="4" required></textarea><br><br>
+    <label for="steps">Steps</label><br>
+    <textarea id="steps" name="steps" rows="4" required></textarea><br><br>
+    <label for="image">Image (optional)</label><br>
+    <input type="file" id="image" name="image" accept="image/*"><br><br>
+    <button type="submit">Save Recipe</button>
+  </form>
+  <div id="category-filter-container">
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Snack">Snack</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div id="search-container">
+    <label for="search">Search by Title:</label>
+    <input type="text" id="search" placeholder="Type to search...">
+  </div>
+  <button id="import-recipe-btn" type="button">Import Random Recipe</button>
+  <div id="recipe-list"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
